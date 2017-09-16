@@ -1,8 +1,13 @@
 package com.example.user.mylifemap.Gps;
 
 import android.content.Context;
+import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
+import android.os.Bundle;
 import android.util.Log;
+
+import java.io.Serializable;
 
 
 /**
@@ -11,10 +16,13 @@ import android.util.Log;
 
 public class MyLocation {
     private Context context;
-    private Double latitude;
-    private Double longitude;
+
+    private double latitude;
+    private double longitude;
+
     private LocationManager locationManager;
     private MyLocationListener myLocationListener;
+
     private final String LOG_TAG = "MyLocation";
 
     public MyLocation(Context context) {
@@ -42,5 +50,38 @@ public class MyLocation {
         }
 
     }
+
+    public Double getLatitude() {
+        return latitude;
+    }
+
+    public Double getLongitude() {
+        return longitude;
+    }
+
+    public class MyLocationListener implements LocationListener {
+
+        @Override
+        public void onLocationChanged(Location location) {
+            latitude = location.getLatitude();
+            longitude = location.getLongitude();
+        }
+
+        @Override
+        public void onStatusChanged(String s, int i, Bundle bundle) {
+
+        }
+
+        @Override
+        public void onProviderEnabled(String s) {
+
+        }
+
+        @Override
+        public void onProviderDisabled(String s) {
+
+        }
+
+    }//end MyLocationListener.class
 
 }//end MyLocation.class
