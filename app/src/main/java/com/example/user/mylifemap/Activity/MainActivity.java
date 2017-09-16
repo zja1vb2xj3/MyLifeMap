@@ -55,9 +55,5 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setTitle(getResources().getString(R.string.mainActionbarTitle));
         ActivityDesigner activityDesigner = new ActivityDesigner(this, actionBar);
         activityDesigner.initalSettingforActivityDesign();
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            getWindow().setStatusBarColor(getResources().getColor(R.color.colorBlack));//윈도우 색상 변경
-//            getSupportActionBar().setBackgroundDrawable(getDrawable(R.color.colorBlack));//액션바 색상 변경
-//        }
     }
 }
