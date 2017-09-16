@@ -15,7 +15,7 @@ import com.nhn.android.maps.NMapView;
 import com.nhn.android.maps.maplib.NGeoPoint;
 
 import butterknife.ButterKnife;
-
+//
 public class MainActivity extends AppCompatActivity {
     private NGeoPoint nGeoPoint;
     private NMapView nMapView;
