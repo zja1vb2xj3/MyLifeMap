@@ -3,12 +3,12 @@
     package="com.example.user.mylifemap">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <!--대략적인 위치에 Access 할수 있도록 허용-->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <!--정확한 위치에 Access 할수 있도록 허용-->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <!--네트워크에 대한 정보에 엑세스 할수 있도록 허용-->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 대략적인 위치에 Access 할수 있도록 허용 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 정확한 위치에 Access 할수 있도록 허용 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 네트워크에 대한 정보에 엑세스 할수 있도록 허용 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -17,15 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
+        <activity android:name=".Activity.RegisterMyLifeActivity"/>
     </application>
-
 
 </manifest>

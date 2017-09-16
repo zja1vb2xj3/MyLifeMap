@@ -10,8 +10,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:id="@+id/button1"
-        android:text="gps 정보 찾기"
+        android:text="나의 인생 등록"
+        android:id="@+id/registerMyLife"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="나의 인생 검색"
+        android:id="@+id/searchMyLife"
         />
 
 
