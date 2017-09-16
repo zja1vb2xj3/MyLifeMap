@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.mylifemap">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--대략적인 위치에 Access 할수 있도록 허용-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!--정확한 위치에 Access 할수 있도록 허용-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--네트워크에 대한 정보에 엑세스 할수 있도록 허용-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+
 
 </manifest>
